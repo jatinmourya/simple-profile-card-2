@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+body {
+  height: 100vh;
+  background-color: #dbdbdb;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body .box {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 600px;
+  width: 380px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 430px auto;
+      grid-template-rows: 430px auto;
+}
+
+body .box .box1 {
+  position: relative;
+  width: 100%;
+}
+
+body .box .box1 .img {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: url("man.jpg");
+  background-size: 100%;
+  background-position-y: 5%;
+  -webkit-filter: grayscale(100%) blur(1px);
+          filter: grayscale(100%) blur(1px);
+}
+
+body .box .box1 .text {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 80px;
+  bottom: 20px;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+}
+
+body .box .box1 .text h5 {
+  color: #969696;
+}
+
+body .box .box1 button {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  bottom: -60px;
+  left: 50%;
+  background-color: #d82b2b;
+  -webkit-box-shadow: 0 0 30px #f10000;
+          box-shadow: 0 0 30px #f10000;
+}
+
+body .box .box2 {
+  background-color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .box .box2 .text1,
+body .box .box2 .text2,
+body .box .box2 .text3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+body .box .box2 .text1 p,
+body .box .box2 .text2 p,
+body .box .box2 .text3 p {
+  color: #6e6e6e;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+body .box .box2 .text1 span,
+body .box .box2 .text2 span,
+body .box .box2 .text3 span {
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+body .box:hover .img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+body .box:hover .text {
+  opacity: 1;
+  bottom: 50px;
+}
+/*# sourceMappingURL=style.css.map */
